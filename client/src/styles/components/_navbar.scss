@@ -1,0 +1,132 @@
+nav {
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  background-color: rgba(169, 191, 115, 0.363);
+  border-radius: 0px;
+  z-index: 10;
+  top: 0;
+
+  @media screen and(max-width: 1251px) {
+    padding: 0 20px;
+  }
+.barreDeRecherche{
+  display: flex;
+  max-width: 270px;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 7px 7px 37px;
+  margin: 0;
+  background-image: url('../../../public/img/icons/loupe.png');
+  background-repeat: no-repeat;
+  background-position: 5px 3px;
+  background-size:30px ;
+
+  font-family: $font-2;
+  font-size: 18px;
+  color: $color-1;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid $color-1;
+  cursor: pointer;
+  
+  }
+
+  // &::after {
+  //   content: "";
+  //   height: 45px;
+  //   width: 110%;
+  //   left: -20px;
+  //   top:0;
+  //   position: absolute;
+  //   backdrop-filter: blur(3px);
+  //   background: rgba(255, 255, 255, 0.86);
+  //   z-index: -8;
+  // }
+
+  .nav-container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    // max-width: 1190px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo {
+      display: flex;
+      align-items: center;
+a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+      img {
+        height: 110px;
+        width: 110px;
+      }
+      h3 {
+        min-width: 180px;
+margin-left: 10px;
+        font-size: 1.25rem;
+        font-family: $font-1;
+        color: rgba(235, 255, 194);
+      }
+    }
+    
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      .welcome {
+        padding: 10px;
+        min-width: 120px;
+
+        @media screen and(max-width: 590px) {
+          display: none;
+        }
+        
+        h5 {
+          font-family: $font-3;
+        }
+      }
+      
+      li {
+        
+        img {
+          height: 60px;
+          width: 60px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          
+        }
+      }
+    }
+  }
+  .btn-container{
+    position: absolute;
+    top: 40px;
+    right: -170px;
+    cursor: pointer;
+    display: none;
+  
+    img{
+      width: 20%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+ nav{
+  width: 80%; 
+  .barreDeRecherche{
+    display: none;
+ }
+ }
+
+}
